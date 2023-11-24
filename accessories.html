@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="shoppingWeb.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories - Baby Shopping</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        section {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: calc(100vh - 150px);
+        }
+
+        .shopping-item {
+            width: 2in;
+            height: 3in;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .add-to-basket  {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-basket :hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Add styles for the scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3498db;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Baby Shopping</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="feeding.html">Feeding</a>
+        <a href="diapers.html">Diapers</a>
+        <a href="bedding.html">Bedding</a>
+        <a href="toys.html">Toys</a>
+    </nav>
+
+    <section id="accessories">
+        <h2>Accessories</h2>
+        <!-- Repeat the following shopping items to include the desired number -->
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Cute Pacifier</p>
+            <p><img src="https://i.pinimg.com/236x/32/ab/ba/32abba7f3a1986f2157ca1a5a77fa502.jpg" class="image box-shadow"></p>
+
+            <p><a>Price: 185/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Soft Baby Blanket</p>
+            <p><img src="https://i.pinimg.com/236x/29/d2/1b/29d21b6f548cd3070ad5a8085b7130c4.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Adorable Hair Bow</p>
+            <p><img src="https://i.pinimg.com/564x/90/71/57/907157f8df070816da15c8cf7cc6d1d2.jpg" class="image box-shadow"></p>
+            <p><a>Price: 159/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Cozy Socks Set</p>
+            <p><img src="https://i.pinimg.com/564x/89/2b/42/892b429dfcc2b0bf22b13754c70e703d.jpg" class="image box-shadow"></p>
+            <p><a>Price: 456/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Charming Bib</p>
+            <p><img src="https://i.pinimg.com/564x/78/29/ce/7829ce50b464c0ab71053f58fefdf2dc.jpg" class="image box-shadow"></p>
+            <p><a>Price: 250/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Colorful Teething Toy</p>
+            <p><img src="https://i.pinimg.com/564x/ba/49/4b/ba494ba8d09cbb0986c99712705f4270.jpg" class="image box-shadow"></p>
+            <p><a>Price: 300/-Rs Only</p>
+                <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Stylish Sunglasses</p>
+            <p><img src="https://i.pinimg.com/236x/44/b2/e3/44b2e3a72213e96eaa7d1ed81bf75ea6.jpg" class="image box-shadow"></p>
+            <p><a>Price: 300/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Funny Baby Hat</p>
+            <p><img src="https://i.pinimg.com/236x/d3/e0/35/d3e035a2796c5d9d364261b83a220459.jpg" class="image box-shadow"></p>
+            <p><a>Price: 789/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Warm Winter Mittens</p>
+            <p><img src="https://i.pinimg.com/236x/38/17/0c/38170ca43e3eca6fe8d589b08c67d955.jpg" class="image box-shadow"></p>
+            <p><a>Price: 896/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Cuddly Plush Toy</p>
+            <p><img src="https://i.pinimg.com/236x/0d/63/9a/0d639acb60a11b09c4441dd4311fc552.jpg" class="image box-shadow"></p>
+            <p><a>Price: 753/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Trendy Diaper Bag</p>
+            <p><img src="https://i.pinimg.com/236x/2e/c0/9a/2ec09aeb03ec9bea283b48c44a7ca40c.jpg" class="image box-shadow"></p>
+            <p><a>Price: 456/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Safety Corner Protectors</p>
+            <p><img src="https://i.pinimg.com/564x/e4/c4/6e/e4c46eb8a846062683d1d803b851bfac.jpg" class="image box-shadow"></p>
+            <p><a>Price: 788/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Milestone Cards</p>
+            <p><img src="https://i.pinimg.com/236x/8e/83/37/8e8337d900b8b87059f9a282b0dec879.jpg" class="image box-shadow"></p>
+            <p><a>Price: 599/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Fashionable Baby Shoes</p>
+            <p><img src="https://i.pinimg.com/236x/2a/c4/f3/2ac4f35d85a302d7cfa1f45a3828dabd.jpg" class="image box-shadow"></p>
+            <p><a>Price: 599/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Cute Bowtie</p>
+            <p><img src="https://i.pinimg.com/564x/5f/36/88/5f3688629c7dc354d7c5078956290cba.jpg" class="image box-shadow"></p>
+            <p><a>Price: 788/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Soft Washcloths Set</p>
+            <p><img src="https://i.pinimg.com/564x/ed/fa/bb/edfabbfb9b4e4ee8a9412280d5fb6207.jpg" class="image box-shadow"></p>
+            <p><a>Price: 699/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Funny Pacifier Clips</p>
+            <p><img src="https://i.pinimg.com/236x/93/ed/e1/93ede11db31bb33003f216ad83a49792.jpg" class="image box-shadow"></p>
+            <p><a>Price: 799/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Sensory Development Toys</p>
+            <p><img src="https://i.pinimg.com/564x/66/65/ce/6665cee3d27ef1fd9dbd2eeb39c739e0.jpg" class="image box-shadow"></p>
+            <p><a>Price: 499/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Stylish Baby Mittens</p>
+            <p><img src="https://i.pinimg.com/236x/63/a5/71/63a5716caed135e634b0739c44e98584.jpg" class="image box-shadow"></p>
+            <p><a>Price: 500/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Colorful Bandana Bibs</p>
+            <p><img src="https://i.pinimg.com/236x/1e/e4/00/1ee400d02a44ba77eca84dc75619ddf7.jpg" class="image box-shadow"></p>
+            <p><a>Price: 300/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <!-- Repeat the above shopping items as needed -->
+    </section>
+
+   
+
+    <script>
+        function addToBasket(item) {
+            alert('Added to Basket: ' + item.querySelector('p').textContent);
+            // You can implement your logic for adding items to the basket here
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="shoppingWeb.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toys - Baby Shopping</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        section {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: calc(100vh - 150px);
+        }
+
+        .shopping-item {
+            width: 2in;
+            height: 3in;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .add-to-basket {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-basket:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Add styles for the scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3498db;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Baby Shopping</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="feeding.html">Feeding</a>
+        <a href="diapers.html">Diapers</a>
+        <a href="bedding.html">Bedding</a>
+        <a href="toys.html">Toys</a>
+    </nav>
+
+    <section id="toys">
+        <h2>Toys</h2>
+        <!-- Repeat the following shopping items to include the desired number -->
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Plush Stuffed Animal</p>
+            <p><img src="https://i.pinimg.com/170x/7d/ca/9b/7dca9b8536c905cf189b530d052ae23f.jpg" class="image box-shadow"></p>
+            <p><a>Price: 854/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Interactive Baby Toy</p>
+            <p><img src="https://i.pinimg.com/170x/45/36/4b/45364b1c1a608773f12c5a4e97b5e74c.jpg" class="image box-shadow"></p>
+            <p><a>Price: 465/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Rattle Set</p>
+            <p><img src="https://i.pinimg.com/170x/f0/fa/a1/f0faa1c3f95e1ec9909689389b6b92da.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Stacking Rings Toy</p>
+            <p><img src="https://i.pinimg.com/236x/ad/8c/bf/ad8cbf6ee22f9469af9a51707d4ead63.jpg" class="image box-shadow"></p>
+            <p><a>Price: 1258/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Teething Toy Set</p>
+            <p><img src="https://i.pinimg.com/236x/35/2c/23/352c23cd54d259b79fb8448ecab0db36.jpg" class="image box-shadow"></p>
+            <p><a>Price: 487/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Musical Mobile</p>
+            <p><img src="https://i.pinimg.com/236x/d5/c5/b9/d5c5b9553b18ad24810db5e4ba8da7e0.jpg" class="image box-shadow"></p>
+            <p><a>Price: 485/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Soft Baby Book</p>
+            <p><img src="https://i.pinimg.com/236x/71/b5/ea/71b5ead2725f03da013ce91fb5cada42.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Developmental Baby Toy</p>
+            <p><img src="https://i.pinimg.com/474x/e8/1d/bb/e81dbbbb51c207194c3df8b06958f9a0.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Drum Set</p>
+            <p><img src="https://i.pinimg.com/236x/ce/ca/e2/cecae21dbd54e27d7b27240a3300c8ce.jpg" class="image box-shadow"></p>
+            <p><a>Price: 854/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Mirror Toy</p>
+            <p><img src="https://i.pinimg.com/236x/6c/4d/fa/6c4dfa0755054572d1fe01104359d723.jpg" class="image box-shadow"></p>
+            <p><a>Price: 455/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Sensory Ball Set</p>
+            <p><img src="https://i.pinimg.com/236x/8d/db/9a/8ddb9afba851c8c3dee421fbb4295b5f.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Einstein Play Gym</p>
+            <p><img src="https://i.pinimg.com/236x/ae/27/c1/ae27c14eaae8d1df69ad52ea33884a1d.jpg" class="image box-shadow"></p>
+            <p><a>Price: 965/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Wooden Baby Blocks</p>
+            <p><img src="https://i.pinimg.com/236x/ef/cd/23/efcd2344d279dd1d54cbf93bd5d8c101.jpg" class="image box-shadow"></p>
+            <p><a>Price: 599/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Piano Mat</p>
+            <p><img src="https://i.pinimg.com/236x/a0/f4/79/a0f479462b72aa322e3ee5deb9083398.jpg" class="image box-shadow"></p>
+            <p><a>Price: 564/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Soft Plush Ball Set</p>
+            <p><img src="https://i.pinimg.com/236x/6c/49/9b/6c499b6603b18beb0218cc05d7d71f66.jpg" class="image box-shadow"></p>
+            <p><a>Price: 456/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Activity Cube</p>
+            <p><img src="https://i.pinimg.com/236x/de/a6/15/dea6153162716fd2cb9e92658f6c371d.jpg" class="image box-shadow"></p>
+            <p><a>Price: 752/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Chewable Baby Toy</p>
+            <p><img src="https://i.pinimg.com/236x/df/59/b4/df59b4d8fc9868af56d70b68c3177320.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Soft Plush Doll</p>
+            <p><img src="https://i.pinimg.com/236x/31/de/e4/31dee41a173a75c22621df5d3c622eba.jpg" class="image box-shadow"></p>
+            <p><a>Price: 784/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Activity Walker for Babies</p>
+            <p><img src="https://i.pinimg.com/236x/82/71/8c/82718ce621173df9de41138a2653d7d8.jpg" class="image box-shadow"></p>
+            <p><a>Price: 185/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Suction Toys</p>
+            <p><img src="https://i.pinimg.com/236x/22/c0/86/22c0866318228cf26858d60b962361d9.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <!-- Repeat the above shopping items as needed -->
+    </section>
+
+   
+
+    <script>
+        function addToBasket(item) {
+            alert('Added to Basket: ' + item.querySelector('p').textContent);
+            // You can implement your logic for adding items to the basket here
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="shoppingWeb.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Feeding - Baby Shopping</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        section {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: calc(100vh - 150px);
+        }
+
+        .shopping-item {
+            width: 2in;
+            height: 3in;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .add-to-basket {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-basket:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Add styles for the scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3498db;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Baby Shopping</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="feeding.html">Feeding</a>
+        <a href="diapers.html">Diapers</a>
+        <a href="bedding.html">Bedding</a>
+        <a href="toys.html">Toys</a>
+    </nav>
+
+    <section id="feeding">
+        <h2>Feeding</h2>
+        <!-- Repeat the following shopping items to include the desired number -->
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Bottle Set</p>
+            <p><img src="https://i.pinimg.com/236x/cb/6d/ee/cb6dee52c314f3a0a22023e77a97b9d0.jpg" class="image box-shadow"></p>
+            <p><a>Price: 569/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Silicone Bib</p>
+            <p><img src="https://i.pinimg.com/236x/d8/87/ae/d887aeaddb645395c37a90258b2dd5ab.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>High Chair</p>
+            <p><img src="https://i.pinimg.com/236x/4d/09/21/4d092140d2d74e142d48d2068376f366.jpg" class="image box-shadow"></p>
+            <p><a>Price: 258/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Food Maker</p>
+            <p><img src="https://i.pinimg.com/564x/b1/b4/57/b1b457e3b447a6368269e418f553308d.jpg" class="image box-shadow"></p>
+            <p><a>Price: 741/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Spill-Proof Sippy Cup</p>
+            <p><img src="https://i.pinimg.com/564x/2b/b1/79/2bb17940150589cd885e54f679b5d4fa.jpg" class="image box-shadow"></p>
+            <p><a>Price: 185/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Soft Baby Spoon Set</p>
+            <p><img src="https://i.pinimg.com/236x/9a/70/a0/9a70a0a7908b31418b270d73f86464ea.jpg" class="image box-shadow"></p>
+            <p><a>Price: 185/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Insulated Bottle Cooler</p>
+            <p><img src="https://i.pinimg.com/236x/02/6f/f9/026ff9fe24dafd76a2bb30fec54bbe9b.jpg" class="image box-shadow"></p>
+            <p><a>Price: 459/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Breastfeeding Pillow</p>
+            <p><img src="https://i.pinimg.com/236x/1a/9e/a2/1a9ea2a9b94925a3b7ff488c81aadbe1.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Convertible High Chair</p>
+            <p><img src="https://i.pinimg.com/236x/7a/dd/6e/7add6eb5ac298d074a48a2b7b8628ec7.jpg" class="image box-shadow"></p>
+            <p><a>Price: 256/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Training Cup Set</p>
+            <p><img src="https://i.pinimg.com/236x/91/4e/f1/914ef1657c2be1dcf689248e690b0550.jpg" class="image box-shadow"></p>
+            <p><a>Price: 639/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Portable Baby Bottle Warmer</p>
+            <p><img src="https://i.pinimg.com/564x/f0/dc/3e/f0dc3e7f02a46d925d984fd3136bdf83.jpg" class="image box-shadow"></p>
+            <p><a>Price: 369/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Feeding Spoons</p>
+            <p><img src="https://i.pinimg.com/564x/aa/f0/4e/aaf04eed85aee7e06585673d3454b8d5.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Adjustable High Chair</p>
+            <p><img src="https://i.pinimg.com/236x/8f/a6/79/8fa679793b4f4826617c9afeff371ad9.jpg" class="image box-shadow"></p>
+            <p><a>Price: 528/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Bamboo Baby Plate Set</p>
+            <p><img src="https://i.pinimg.com/236x/03/5e/be/035ebe9d74fd4ec291a8bc4960f6717a.jpg" class="image box-shadow"></p>
+            <p><a>Price: 258/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Bottle Drying Rack</p>
+            <p><img src="https://i.pinimg.com/564x/86/42/dd/8642ddbc69479d477cc660f87d4b94db.jpg" class="image box-shadow"></p>
+            <p><a>Price: 478/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Infant Formula Dispenser</p>
+            <p><img src="https://i.pinimg.com/236x/d9/34/fe/d934fed9e7a71e8fbf638cb47271e65e.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Burp Cloths</p>
+            <p><img src="https://i.pinimg.com/236x/dd/d7/f7/ddd7f76f5e5452357942565725bd4607.jpg" class="image box-shadow"></p>
+            <p><a>Price: 185/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Food Storage Containers</p>
+            <p><img src="https://i.pinimg.com/236x/92/a2/8e/92a28e437fbf2a5856a79ea76a8a542c.jpg" class="image box-shadow"></p>
+            <p><a>Price: 489/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Adjustable Nursing Pillow</p>
+            <p><img src="https://i.pinimg.com/236x/24/07/f6/2407f6d8f146de5253739acd75b0f1e0.jpg" class="image box-shadow"></p>
+            <p><a>Price: 965/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Insulated Baby Bottle Bag</p>
+            <p><img src="https://i.pinimg.com/564x/62/eb/2c/62eb2cff012c0399dcced70347199827.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <!-- Repeat the above shopping items as needed -->
+    </section>
+
+
+    <script>
+        function addToBasket(item) {
+            alert('Added to Basket: ' + item.querySelector('p').textContent);
+            // You can implement your logic for adding items to the basket here
+        }
+    </script>
+
+</body>
+</html>

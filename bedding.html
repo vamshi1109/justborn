@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="shoppingWeb.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bedding - Baby Shopping</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        section {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: calc(100vh - 150px);
+        }
+
+        .shopping-item {
+            width: 2in;
+            height: 3in;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .add-to-basket  {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-basket :hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Add styles for the scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3498db;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Baby Shopping</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="feeding.html">Feeding</a>
+        <a href="diapers.html">Diapers</a>
+        <a href="bedding.html">Bedding</a>
+        <a href="toys.html">Toys</a>
+    </nav>
+
+    <section id="bedding">
+        <h2>Bedding</h2>
+        <!-- Repeat the following shopping items to include the desired number -->
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Soft Baby Blanket</p>
+            <p><img src="https://i.pinimg.com/564x/88/31/ac/8831acfd175f83b558eba1df2cb2205f.jpg" class="image box-shadow"></p>
+            <p><a>Price: 158/-Rs Only</p>
+            <button class="add-to-basket  ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Crib Bedding Set</p>
+            <p><img src="https://i.pinimg.com/736x/0b/63/8e/0b638ee54f91e7bea878a375994a1d6b.jpg" class="image box-shadow"></p>
+            <p><a>Price: 459/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Cozy Sleep Sack</p>
+            <p><img src="https://i.pinimg.com/236x/a5/1c/7c/a51c7c7e70496dda9919cccc4e7e9ab9.jpg" class="image box-shadow"></p>
+            <p><a>Price: 178/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Plush Baby Pillow</p>
+            <p><img src="https://i.pinimg.com/236x/e4/e1/84/e4e18452431643228ce73d9dba2dbb53.jpg" class="image box-shadow""></p>
+            <p><a>Price: 158/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Waterproof Crib Mattress Pad</p>
+            <p><img src="https://i.pinimg.com/236x/dc/e7/50/dce750a67b628148e6001fa0b98d2c96.jpg" class="image box-shadow"></p>
+            <p><a>Price: 456/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Nursery Bedding Set</p>
+            <p><img src="https://i.pinimg.com/236x/9b/f8/fa/9bf8fa73a4ffb06fea907dc992de8538.jpg" class="image box-shadow"></p>
+            <p><a>Price: 159/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Quilt</p>
+            <p><img src="https://i.pinimg.com/236x/ef/15/c6/ef15c697f1489a0c58b1a9e525076ff9.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Fitted Crib Sheet</p>
+            <p><img src="https://i.pinimg.com/564x/13/cb/87/13cb8750ae15e4fb165ee4add35828c8.jpg" class="image box-shadow"></p>
+            <p><a>Price: 185/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Soft Muslin Swaddle Blankets</p>
+            <p><img src="https://i.pinimg.com/236x/66/3a/06/663a06e4d31c9cf07f269839e975f360.jpg" class="image box-shadow"></p>
+            <p><a>Price: 125/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Bumper Pad</p>
+            <p><img src="https://i.pinimg.com/564x/9d/37/b5/9d37b5bd17b24b7f9d9aa2d8ee4ca8dc.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Portable Crib Mattress</p>
+            <p><img src="https://i.pinimg.com/564x/c7/09/3e/c7093e39276024035c956479049c66ba.jpg" class="image box-shadow"></p>
+            <p><a>Price: 784/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Sleeping Bag</p>
+            <p><img src="https://i.pinimg.com/236x/52/3f/ec/523fec3526e8e2ea6daf95348e787503.jpg" class="image box-shadow"></p>
+            <p><a>Price: 258/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Adorable Crib Mobile</p>
+            <p><img src="https://i.pinimg.com/236x/0e/a2/2e/0ea22e6a85d1a43d2cf1e8002777a419.jpg" class="image box-shadow"></p>
+            <p><a>Price: 789/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Knitted Baby Blanket</p>
+            <p><img src="https://i.pinimg.com/236x/33/23/a8/3323a81a17b4d863da9af8f7c82596d1.jpg" class="image box-shadow"></p>
+            <p><a>Price: 145/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Decorative Nursery Pillow</p>
+            <p><img src="https://i.pinimg.com/236x/c5/0e/fa/c50efa8286e41b011bfba333cb0c93cd.jpg" class="image box-shadow"></p>
+            <p><a>Price: 158/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Plush Changing Pad Cover</p>
+            <p><img src="https://i.pinimg.com/236x/c0/89/1b/c0891b4ff0e5996bb45f91efe6688957.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Security Blanket</p>
+            <p><img src="https://i.pinimg.com/564x/04/84/6f/04846f91e29e5adad4bf3bd082a13a26.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Crib Skirt</p>
+            <p><img src="https://i.pinimg.com/236x/7d/03/b1/7d03b1d68c21e5e88e95080af21c5c84.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Travel Crib Light</p>
+            <p><img src="https://i.pinimg.com/236x/2f/55/c3/2f55c3d091a84b8665ee5640c0e0170f.jpg" class="image box-shadow"></p>
+            <p><a>Price: 456/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Breathable Baby Mattress</p>
+            <p><img src="https://i.pinimg.com/236x/8e/05/18/8e051849692a2f65dc7ad77aea67725a.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <!-- Repeat the above shopping items as needed -->
+    </section>
+
+
+    <script>
+        function addToBasket(item) {
+            alert('Added to Basket: ' + item.querySelector('p').textContent);
+            // You can implement your logic for adding items to the basket here
+        }
+    </script>
+
+</body>
+</html>

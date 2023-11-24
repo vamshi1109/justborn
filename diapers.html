@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="shoppingWeb.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diapers - Baby Shopping</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        section {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: calc(100vh - 150px);
+        }
+
+        .shopping-item {
+            width: 2in;
+            height: 3in;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .add-to-basket  {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-basket :hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Add styles for the scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3498db;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Baby Shopping</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="feeding.html">Feeding</a>
+        <a href="diapers.html">Diapers</a>
+        <a href="bedding.html">Bedding</a>
+        <a href="toys.html">Toys</a>
+    </nav>
+
+    <section id="diapers">
+        <h2>Diapers</h2>
+        <!-- Repeat the following shopping items to include the desired number -->
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Newborn Diapers Pack</p>
+            <p><img src="https://i.pinimg.com/236x/12/ee/70/12ee70f86b07d4ddb52bb2a55d8fc050.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Biodegradable Diapers</p>
+            <p><img src="https://i.pinimg.com/236x/a7/df/94/a7df941325aab65001dec47ce6406e3e.jpg" class="image box-shadow"></p>
+            <p><a>Price: 462/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Reusable Cloth Diapers</p>
+            <p><img src="https://i.pinimg.com/236x/6e/4f/ef/6e4fef3b151420f7c4404eb1247b1432.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Training Pants Set</p>
+            <p><img src="https://i.pinimg.com/236x/02/8d/c1/028dc17041ac5a934e01da40e5b52f76.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Diaper Bag Backpack</p>
+            <p><img src="https://i.pinimg.com/236x/a6/90/05/a69005f9475b16b253c10b91e2962928.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Diaper Changing Mat</p>
+            <p><img src="https://www.momshome.in/cdn/shop/products/002-11.jpg?v=1649839224" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Nighttime Diapers</p>
+            <p><img src="https://tse1.mm.bing.net/th?id=OIP.W1J5cdy3p_0NkjuL7cz9YQHaHa&pid=Api&P=0&h=180" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Wipes Pack</p>
+            <p><img src="https://i.pinimg.com/236x/bb/9d/76/bb9d766fc19f3da6f611f68ddedf92e9.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Diaper Pail</p>
+            <p><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_1pcKAAO9TKZm87fjy2xeYOp4dFoVzeenvA&usqp=CAU" class="image box-shadow"></p>
+            <p><a>Price: 459/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Bamboo Diaper Liners</p>
+            <p><img src="https://i.pinimg.com/564x/3d/93/f7/3d93f7fddc7ede63743e02d9cf7b3e62.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Flushable Diaper Liners</p>
+            <p><img src="https://i.pinimg.com/236x/5f/12/1b/5f121ba502b62f47c3c549943f0990a7.jpg" class="image box-shadow"></p>
+            <p><a>Price: 125/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Diaper Rash Cream</p>
+            <p><img src="https://i.pinimg.com/236x/c5/56/0b/c5560baa2131f836139800f39240a0f6.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Diaper Caddy Organizer</p>
+            <p><img src="https://i.pinimg.com/564x/05/6b/36/056b36ef8a5dbcabdce4436c1935b4be.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Disposable Changing Mats</p>
+            <p><img src="https://i.pinimg.com/236x/ff/58/83/ff588352531e0a9947126756801522d4.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Diaper Genie Refills</p>
+            <p><img src="https://i.pinimg.com/236x/5b/5a/db/5b5adbd5bafdac193d620ce96c959cb3.jpg" class="image box-shadow"></p>
+            <p><a>Price: 156/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Diaper Pail Deodorizers</p>
+            <p><img src="https://i.pinimg.com/564x/47/40/78/4740787b3655fcd63659f71a6f97592d.jpg" class="image box-shadow"></p>
+            <p><a>Price: 125/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Powder</p>
+            <p><img src="https://i.pinimg.com/236x/90/d2/f3/90d2f339a407e761f42d77e6bb496f7b.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Diaper Bag Organizer</p>
+            <p><img src="https://i.pinimg.com/564x/bc/00/25/bc0025d4fe450c770d631b20876e4e06.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Baby Changing Station</p>
+            <p><img src="https://i.pinimg.com/236x/fc/3b/d8/fc3bd8c0d52bfade44caa97e273e562d.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Wet Bag for Diapers</p>
+            <p><img src="https://i.pinimg.com/236x/d7/88/fa/d788fa61664a1846a158cece517756ec.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+            <button class="add-to-basket ">Buy Now</button>
+        </div>
+        <!-- Repeat the above shopping items as needed -->
+    </section>
+
+    <script>
+        function addToBasket(item) {
+            alert('Added to Basket: ' + item.querySelector('p').textContent);
+            // You can implement your logic for adding items to the basket here
+        }
+    </script>
+
+</body>
+</html>

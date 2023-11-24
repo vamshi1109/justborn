@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="shoppingWeb.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing - Baby Shopping</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            display: inline-block;
+            padding: 10px 15px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #34495e;
+        }
+
+        section {
+            padding: 20px;
+            overflow-y: auto;
+            max-height: calc(100vh - 150px);
+        }
+
+        .shopping-item {
+            width: 2in;
+            height: 3in;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            display: inline-block;
+            text-align: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .add-to-basket {
+            display: block;
+            margin: 10px auto;
+            padding: 5px 10px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .add-to-basket:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            background-color: #34495e;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Add styles for the scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #3498db;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Baby Shopping</h1>
+    </header>
+
+    <nav>
+        <a href="home.html">Home</a>
+        <a href="clothing.html">Clothing</a>
+        <a href="accessories.html">Accessories</a>
+        <a href="feeding.html">Feeding</a>
+        <a href="diapers.html">Diapers</a>
+        <a href="bedding.html">Bedding</a>
+        <a href="toys.html">Toys</a>
+    </nav>
+
+    <section id="clothing">
+        <h2>Clothing</h2>
+        <!-- Repeat the following shopping items to include the desired number -->
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Cute Onesie</p>
+            <p><img src="https://i.pinimg.com/564x/16/98/7a/16987a9641ba44359ca2320f109f671a.jpg" class="image box-shadow"></p>
+            <p><a>Price: 789/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Warm Sleepsuit</p>
+            <p><img src="https://i.pinimg.com/564x/9e/f8/a5/9ef8a56301207848de9e306c45323d3f.jpg" class="image box-shadow"></p>
+            <p><a>Price: 156/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Stylish Top</p>
+            <p><img src="https://i.pinimg.com/236x/74/b6/86/74b68628b210aafb75affd9417e94f54.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Comfy Bottoms</p>
+            <p><img src="https://superbottoms.com/cdn/shop/files/6PACK-3Explorer_3BummyWorld_1.jpg?v=1699361516" class="image box-shadow"></p>
+            <p><a>Price: 456/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Adorable Hat</p>
+            <p><img src="https://i.pinimg.com/564x/d3/e0/35/d3e035a2796c5d9d364261b83a220459.jpg" class="image box-shadow"></p>
+            <p><a>Price: 852/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Playful Romper</p>
+            <p><img src="https://i.pinimg.com/236x/ac/80/8f/ac808f2a4a7f7742baa6174edc56cd96.jpg" class="image box-shadow"></p>
+            <p><a>Price: 425/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Elegant Dress</p>
+            <p><img src="https://i.pinimg.com/236x/2f/8d/ae/2f8daebfa99ad34df938626f32d830b9.jpg" class="image box-shadow"></p>
+            <p><a>Price: 789/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Casual T-Shirt</p>
+            <p><img src="https://i.pinimg.com/236x/89/1f/56/891f5623b9ab3ec0dca3b9fb2097bf46.jpg" class="image box-shadow"></p>
+            <p><a>Price: 200/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Colorful Leggings</p>
+            <p><img src="https://i.pinimg.com/236x/52/1d/20/521d200755775fc651d1649a3221e9de.jpg" class="image box-shadow"></p>
+            <p><a>Price: 189/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Fashionable Jacket</p>
+            <p><img src="https://i.pinimg.com/236x/58/b3/9e/58b39ec3ca54777917374dfc88995395.jpg" class="image box-shadow"></p>
+            <p><a>Price: 178/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Sleeveless Jumpsuit</p>
+            <p><img src="https://i.pinimg.com/236x/be/69/15/be691580a39afaa2e34246ee13468bd3.jpg" class="image box-shadow"></p>
+            <p><a>Price: 156/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Striped Onesie</p>
+            <p><img src="https://i.pinimg.com/236x/fb/82/5c/fb825c4c07581bc069f9ec26f4bb7e44.jpg" class="image box-shadow"></p>
+            <p><a>Price: 185/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Denim Overalls</p>
+            <p><img src="https://i.pinimg.com/236x/cc/21/6f/cc216f90721b51624c320f89cae07d0a.jpg" class="image box-shadow"></p>
+            <p><a>Price: 845/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Soft Pajamas</p>
+            <p><img src="https://i.pinimg.com/236x/5f/ec/b3/5fecb370a0f1f36880f54a70565c0ff4.jpg" class="image box-shadow"></p>
+            <p><a>Price: 896/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Sporty Tracksuit</p>
+            <p><img src="https://i.pinimg.com/236x/17/51/5f/17515fe43eedd33f1777c83671af0394.jpg" class="image box-shadow"></p>
+            <p><a>Price: 158/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Trendy Skirt</p>
+            <p><img src="https://i.pinimg.com/236x/a7/16/71/a71671e5fe11d367b84d60a2a465da2d.jpg" class="image box-shadow"></p>
+            <p><a>Price: 459/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Cozy Sweater</p>
+            <p><img src="https://i.pinimg.com/236x/68/8f/08/688f0837976ddf3540c35efbf85c9d15.jpg" class="image box-shadow"></p>
+            <p><a>Price: 965/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Printed Onesie</p>
+            <p><img src="https://i.pinimg.com/236x/40/9f/47/409f47011d14a628c14a74e4f10cd6da.jpg" class="image box-shadow"></p>
+            <p><a>Price: 785/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Cute Socks Set</p>
+            <p><img src="https://m.media-amazon.com/images/I/61JLdI32TXL._AC_UY1100_.jpg" class="image box-shadow"></p>
+            <p><a>Price: 458/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <div class="shopping-item" onclick="addToBasket(this)">
+            <p>Formal Shirt</p>
+            <p><img src="https://i.pinimg.com/236x/27/f8/fa/27f8fafdee64044f52de9dc96398c045.jpg" class="image box-shadow"></p>
+            <p><a>Price: 485/-Rs Only</p>
+                <button class="btn btn-secondary">6M</button>
+                <button class="btn btn-secondary">1Y</button>
+                <button class="btn btn-secondary">2Y</button>
+            <button class="add-to-basket">Buy Now</button>
+        </div>
+        <!-- Repeat the above shopping items as needed -->
+    </section>
+
+    
+
+    <script>
+        function addToBasket(item) {
+            alert('Added to Basket: ' + item.querySelector('p').textContent);
+            // You can implement your logic for adding items to the basket here
+        }
+    </script>
+
+</body>
+</html>
