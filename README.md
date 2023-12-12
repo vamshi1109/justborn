@@ -1,2 +1,0 @@
-# justborn
-baby shopping
