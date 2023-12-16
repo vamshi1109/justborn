@@ -39,6 +39,32 @@ testing in web chat
 ![image](https://github.com/vamshi1109/justborn/assets/150002160/1404363e-8fd4-4dc8-a23b-717a21b96116)
 ![image](https://github.com/vamshi1109/justborn/assets/150002160/4ff4092a-8702-4fec-ad0d-a6b642a9fe76)
 
+CODE FOR AI BOT
+![image](https://github.com/vamshi1109/justborn/assets/150002160/efb57cd7-3c6c-4f3a-9d05-a29dd72a6393)
+
+AZURE STATIC WEBSITE
+![image](https://github.com/vamshi1109/justborn/assets/150002160/fd466346-dbd3-4a25-a1fc-5f879c671cee)
+![image](https://github.com/vamshi1109/justborn/assets/150002160/f1a94067-41f4-4ae9-9632-e69f86cc6d63)
+![image](https://github.com/vamshi1109/justborn/assets/150002160/560ee897-8859-4717-a7da-84ddffdc9f43)
+
+CHECKING THE AZURE BOT IN AZURE WEBSITE
+![image](https://github.com/vamshi1109/justborn/assets/150002160/185e56ea-52b7-4b35-8b44-29faa4ca0043)
+![image](https://github.com/vamshi1109/justborn/assets/150002160/246aaee4-4763-429d-884f-7d4e699bb6e7)
+![image](https://github.com/vamshi1109/justborn/assets/150002160/68eb0cda-5dd2-40d8-aca4-778ba3ca970d)
+
+
+
+These are my project details.
+Thank you!
+
+
+
+
+
+
+
+
+
 
 
 
