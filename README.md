@@ -31,6 +31,19 @@ AI LANGUAGE
 ![image](https://github.com/vamshi1109/justborn/assets/150002160/9316c045-234c-4acd-ac52-e4c3ff25fa3d)
 ![image](https://github.com/vamshi1109/justborn/assets/150002160/80194265-cda7-4d23-8040-7426f76fe87c)
 
+PROJECT CREATING BOT AND INTEGRATING IT TO AZURE STATIC WEBSITE
+![image](https://github.com/vamshi1109/justborn/assets/150002160/cd3b0766-9cf7-45a8-b723-db8fa51f8268)
+![image](https://github.com/vamshi1109/justborn/assets/150002160/7000f586-f0a6-49a9-9d74-482ec2cef66f)
+testing in web chat
+![image](https://github.com/vamshi1109/justborn/assets/150002160/a7e23183-b3ce-4138-8988-fae015030198)
+![image](https://github.com/vamshi1109/justborn/assets/150002160/1404363e-8fd4-4dc8-a23b-717a21b96116)
+![image](https://github.com/vamshi1109/justborn/assets/150002160/4ff4092a-8702-4fec-ad0d-a6b642a9fe76)
+
+
+
+
+
+
 
 
 
